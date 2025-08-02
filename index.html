@@ -30,7 +30,7 @@
     
         <h2>Plan Your Trip</h2>
    
-    How to Get there
+        How to Get there
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
@@ -152,11 +152,22 @@
     
     Population: 923,608
     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-    
-    
-    Contact Us
-    First Name (Enter first name)
-    Last Name (Enter last name)
+    <h2>Contact Us</h2>
+    <form>
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" required>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" required>
+
+        <fieldset>
+            <legend>Contact Method</legend>
+            <input id="method1" type="radio" name="email">
+            <label for="method1">Email</label>
+            <input id="method2" type="radio" name="text">
+            <label for="method2">Text</label>
+            <input id="method3" type="radio" name="phone">
+            <label for="method3">Phone</label>
+        </fieldset>
     
     Contact Method (Email, Text, Phone)
     Email Address (Enter Email)
@@ -164,12 +175,13 @@
     
     Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
     Travel Time (Fall, Winter, Spring, Summer, Flexible)
+    </form>
     
-    
-    
-    Copyright 2021 Wunderlust
-    Privacy Statement
-    Terms of Service
+    <footer>
+        <p>Copyright 2021 Wunderlust</p>
+        <p>Privacy Statement</p>
+        <p>Terms of Service</p>
+    </footer>
     
 </body>
 </html>
